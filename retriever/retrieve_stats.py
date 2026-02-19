@@ -11,11 +11,6 @@ load_dotenv()
 
 API_BASE = "https://api.mozambiquehe.re"
 PLATFORM = "X1"  # Xbox
-UIDS = [
-    "2533274966913565", #Dizzywill813
-    "2533274975327738", #TheEpicWig
-    "2535447874496096" #xtrippiex
-]
 # Rate limit: 2 requests per second = minimum 0.5s between requests
 # Using 0.6s to be safe
 RATE_LIMIT_DELAY = 0.6
@@ -28,12 +23,12 @@ def utc_stamp() -> str:
 
 def fetch_user_by_uid(api_key: str, uid: str) -> dict:
     """
-    Calls the /user endpoint for profile/stats data.
+    Calls the /bridge endpoint for profile/stats data by UID.
     Does not support match history (no history param).
 
     Arguments: 
     - api_key: Your API key for authentication.
-    - gamertag: The player's gamertag (username) to fetch data for.
+    - uid: The player's Apex Legends Status user ID to fetch data for.
 
     Returns:
     - A dictionary containing the user's profile and stats data as returned by the API.
@@ -45,7 +40,7 @@ def fetch_user_by_uid(api_key: str, uid: str) -> dict:
         "platform": PLATFORM,
     }
 
-    url = f"{API_BASE}/bridge?auth={api_key}&uid={uid}&platform={PLATFORM}"
+    url = f"{API_BASE}/bridge"
     r = requests.get(url, params=params, timeout=20)
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code}: {r.text[:300]}")
@@ -59,14 +54,22 @@ def save_json(path: Path, obj: dict) -> None:
 
 def main():
     api_key = os.environ.get("APEX_API_KEY")
-    if not api_key:
-        raise SystemExit("Set env vars APEX_API_KEY.")
+    uids_str = os.environ.get("APEX_UIDS")
+    
+    if not api_key or not uids_str:
+        raise SystemExit("Set env vars APEX_API_KEY and APEX_UIDS (comma-separated UIDs).")
+    
+    # Parse comma-separated UIDs
+    uids = [uid.strip() for uid in uids_str.split(",") if uid.strip()]
+    
+    if not uids:
+        raise SystemExit("APEX_UIDS must contain at least one UID.")
 
     # Collect all player data
     all_profiles = {}
     stamp = utc_stamp()
     
-    for i, user_id in enumerate(UIDS):
+    for i, user_id in enumerate(uids):
         print(f"Fetching data for {user_id}...")
         if i > 0:
             time.sleep(RATE_LIMIT_DELAY)
