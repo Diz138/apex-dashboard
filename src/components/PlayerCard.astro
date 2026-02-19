@@ -1,0 +1,207 @@
+---
+import type { PlayerStats } from '../lib/profiles';
+
+type Props = PlayerStats & { isChampion?: boolean };
+
+const { playerName, level, totalKills, topLegend, rank, arenaRank, isChampion = false } = Astro.props;
+
+const globalRankDisplay = typeof rank.globalRankInt === 'number'
+  ? rank.globalRankInt.toLocaleString()
+  : rank.globalRankInt;
+---
+
+<div class="player-card" class:list={{ champion: isChampion }}>
+  <div class="card-container">
+    <div class="left-panel">
+
+      <div class="player-name">[ {playerName} ]</div>
+
+      <div class="rank-icons">
+        <img
+          src={rank.image}
+          alt={rank.name}
+          class="rank-icon"
+          title={`Ranked: ${rank.name}${rank.division > 0 ? ` ${rank.division}` : ''}`}
+        />
+        <img
+          src={arenaRank.image}
+          alt={arenaRank.name}
+          class="rank-icon"
+          title={`Arena: ${arenaRank.name}${arenaRank.division > 0 ? ` ${arenaRank.division}` : ''}`}
+        />
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-label">KILLS</div>
+          <div class="stat-value">{totalKills.toLocaleString()}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">LEVEL</div>
+          <div class="stat-value">{level}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">GLOBAL RANK</div>
+          <div class="stat-value">{globalRankDisplay}</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+      <div class="divider-line"></div>
+      <img
+        src={topLegend.icon}
+        alt={topLegend.name}
+        class="character-image"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .player-card {
+    border: 2px solid rgba(70, 70, 75, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .player-card.champion {
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6), inset 0 0 40px rgba(212, 175, 55, 0.08);
+  }
+
+  .player-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(90, 90, 95, 0.7);
+  }
+
+  .player-card.champion:hover {
+    border-color: #f4d03f;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), inset 0 0 50px rgba(212, 175, 55, 0.12);
+  }
+
+  .card-container {
+    display: flex;
+    height: 450px;
+  }
+
+  .left-panel {
+    flex: 0 0 50%;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(15, 15, 20, 0.95);
+  }
+
+  .player-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  }
+
+  .rank-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .rank-icon {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.9));
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    background: rgba(8, 8, 12, 0.75);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .stats-container .stat-box:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .stat-label {
+    color: #aaaaaa;
+    font-size: 9px;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .stat-value {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    line-height: 1.1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  .right-panel {
+    flex: 0 0 50%;
+    position: relative;
+    background: linear-gradient(90deg, rgba(25, 25, 30, 0.7) 0%, rgba(30, 30, 35, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .divider-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent 0%, #ff4444 15%, #cc0000 50%, #ff4444 85%, transparent 100%);
+    transform: translateY(-50%);
+    box-shadow: 0 0 12px rgba(255, 68, 68, 0.7);
+    z-index: 1;
+  }
+
+  .character-image {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.95));
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      height: 380px;
+    }
+
+    .left-panel {
+      padding: 14px 12px;
+    }
+
+    .rank-icon {
+      width: 54px;
+      height: 54px;
+    }
+
+    .stat-value {
+      font-size: 22px;
+    }
+  }
+</style>
