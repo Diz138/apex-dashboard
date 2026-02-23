@@ -16,11 +16,11 @@ These are loaded from `.env` locally or from GitHub Actions secrets in CI.
 
 | File | Description |
 |------|-------------|
-| `data/latest_profiles.json` | Current player data — read by Astro at build time |
-| `data/snapshots/all_profiles_<TIMESTAMP>.json` | Timestamped archive of each run |
+| `retriever/data/latest_profiles.json` | Current player data — read by Astro at build time |
+| `retriever/data/snapshots/all_profiles_<TIMESTAMP>.json` | Timestamped archive of each run |
 
 > **Note:** `data/snapshots/` is not checked in to version control. Snapshot files accumulate
-> locally and in CI but are not committed to the repository.
+> locally but are not committed to the repository.
 
 Both files share the same schema (see below).
 
@@ -52,7 +52,7 @@ by `totalKills` descending at build time.
       "division": "number (1–4, or 0 for unranked)",
       "image": "string (URL)"
     },
-    "collectedAtUtc": "string (YYYYMMDDTHHMMSSz)"
+    "collectedAtUtc": "string (YYYYMMDDTHHMMSSZ)"
   }
 ]
 ```

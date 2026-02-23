@@ -76,8 +76,10 @@ def transform_profile(raw: dict, stamp: str) -> dict:
     rank = global_data.get("rank") or {}
     arena = global_data.get("arena") or {}
 
-    global_rank_int = rank.get("ALStopIntGlobal")
-    if global_rank_int is None:
+    raw_global_rank_int = rank.get("ALStopIntGlobal")
+    if isinstance(raw_global_rank_int, int) and not isinstance(raw_global_rank_int, bool):
+        global_rank_int = raw_global_rank_int
+    else:
         global_rank_int = "—"
 
     return {

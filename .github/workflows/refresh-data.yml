@@ -2,7 +2,7 @@ name: Refresh Player Data
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # every day at midnight EST (UTC-5)
+    - cron: '0 5 * * *'  # every day at 05:00 UTC-5
   workflow_dispatch:
 
 permissions:
