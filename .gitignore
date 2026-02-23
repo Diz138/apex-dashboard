@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Python virtual environment
 .venv/
+
+# Snapshot data
+retriever/data/snapshots/

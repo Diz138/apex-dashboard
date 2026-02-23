@@ -1,0 +1,37 @@
+name: Refresh Player Data
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # every day at 05:00 UTC-5
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch player stats
+        run: uv run retriever/retrieve_stats.py
+        env:
+          APEX_API_KEY: ${{ secrets.APEX_API_KEY }}
+          APEX_UIDS: ${{ secrets.APEX_UIDS }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add retriever/data/latest_profiles.json
+          if git diff --staged --quiet; then
+            echo "No data changes — skipping commit."
+          else
+            git commit -m "chore: refresh player data [$(date -u +%Y%m%dT%H%M%SZ)]"
+            git push
+          fi
