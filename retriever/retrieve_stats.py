@@ -63,10 +63,20 @@ def transform_profile(raw: dict, stamp: str) -> dict:
 
     for legend_name, legend_data in legends_all.items():
         kills = 0
-        for stat in (legend_data.get("data") or []):
+        stats = legend_data.get("data") or []
+        # Prefer the total "kills" key if present
+        for stat in stats:
             if stat.get("key") == "kills" and isinstance(stat.get("value"), (int, float)):
                 kills = int(stat["value"])
                 break
+        else:
+            # Fall back: sum every stat whose key contains "kills"
+            kills = sum(
+                int(stat["value"])
+                for stat in stats
+                if isinstance(stat.get("value"), (int, float))
+                and "kills" in stat.get("key", "").lower()
+            )
         total_kills += kills
         if kills > top_legend_kills:
             top_legend_kills = kills
