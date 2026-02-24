@@ -6,3 +6,13 @@ dependencies = [
   "python-dotenv>=1.2.1",
   "requests>=2.31.0",
 ]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pyright]
+extraPaths = ["retriever"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["retriever"]
