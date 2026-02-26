@@ -1,0 +1,340 @@
+[
+  {
+    "id": "normal_happy_path",
+    "raw": {
+      "global": {
+        "name": "TestPlayer",
+        "level": 200,
+        "rank": {
+          "rankName": "Gold",
+          "rankDiv": 2,
+          "rankScore": 5500,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
+          "ALStopIntGlobal": 750000
+        },
+        "arena": {
+          "rankName": "Silver",
+          "rankDiv": 1,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/silver1.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Octane": {
+            "data": [{"key": "kills", "value": 300}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/octane.png"}
+          },
+          "Bangalore": {
+            "data": [{"key": "kills", "value": 150}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "TestPlayer",
+      "level": 200,
+      "totalKills": 450,
+      "topLegend": {
+        "name": "Octane",
+        "kills": 300,
+        "icon": "https://api.mozambiquehe.re/assets/icons/octane.png"
+      },
+      "rank": {
+        "name": "Gold",
+        "division": 2,
+        "score": 5500,
+        "image": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
+        "globalRankInt": 750000
+      },
+      "arenaRank": {
+        "name": "Silver",
+        "division": 1,
+        "image": "https://api.mozambiquehe.re/assets/ranks/silver1.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  },
+  {
+    "id": "global_rank_string_becomes_dash",
+    "raw": {
+      "global": {
+        "name": "ArenaPlayer",
+        "level": 50,
+        "rank": {
+          "rankName": "Bronze",
+          "rankDiv": 3,
+          "rankScore": 1000,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/bronze3.png",
+          "ALStopIntGlobal": "No game this split"
+        },
+        "arena": {
+          "rankName": "Unranked",
+          "rankDiv": 4,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Lifeline": {
+            "data": [{"key": "kills", "value": 40}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/lifeline.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "ArenaPlayer",
+      "level": 50,
+      "totalKills": 40,
+      "topLegend": {
+        "name": "Lifeline",
+        "kills": 40,
+        "icon": "https://api.mozambiquehe.re/assets/icons/lifeline.png"
+      },
+      "rank": {
+        "name": "Bronze",
+        "division": 3,
+        "score": 1000,
+        "image": "https://api.mozambiquehe.re/assets/ranks/bronze3.png",
+        "globalRankInt": "—"
+      },
+      "arenaRank": {
+        "name": "Unranked",
+        "division": 4,
+        "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  },
+  {
+    "id": "global_rank_bool_becomes_dash",
+    "raw": {
+      "global": {
+        "name": "BoolPlayer",
+        "level": 75,
+        "rank": {
+          "rankName": "Silver",
+          "rankDiv": 2,
+          "rankScore": 3500,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
+          "ALStopIntGlobal": true
+        },
+        "arena": {
+          "rankName": "Unranked",
+          "rankDiv": 4,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Bloodhound": {
+            "data": [{"key": "kills", "value": 200}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/bloodhound.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "BoolPlayer",
+      "level": 75,
+      "totalKills": 200,
+      "topLegend": {
+        "name": "Bloodhound",
+        "kills": 200,
+        "icon": "https://api.mozambiquehe.re/assets/icons/bloodhound.png"
+      },
+      "rank": {
+        "name": "Silver",
+        "division": 2,
+        "score": 3500,
+        "image": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
+        "globalRankInt": "—"
+      },
+      "arenaRank": {
+        "name": "Unranked",
+        "division": 4,
+        "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  },
+  {
+    "id": "legend_without_data_contributes_zero_kills",
+    "raw": {
+      "global": {
+        "name": "SparsePlayer",
+        "level": 30,
+        "rank": {
+          "rankName": "Bronze",
+          "rankDiv": 4,
+          "rankScore": 500,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/bronze4.png",
+          "ALStopIntGlobal": 2000000
+        },
+        "arena": {
+          "rankName": "Unranked",
+          "rankDiv": 4,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Crypto": {
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/crypto.png"}
+          },
+          "Fuse": {
+            "data": [{"key": "kills", "value": 60}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/fuse.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "SparsePlayer",
+      "level": 30,
+      "totalKills": 60,
+      "topLegend": {
+        "name": "Fuse",
+        "kills": 60,
+        "icon": "https://api.mozambiquehe.re/assets/icons/fuse.png"
+      },
+      "rank": {
+        "name": "Bronze",
+        "division": 4,
+        "score": 500,
+        "image": "https://api.mozambiquehe.re/assets/ranks/bronze4.png",
+        "globalRankInt": 2000000
+      },
+      "arenaRank": {
+        "name": "Unranked",
+        "division": 4,
+        "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  },
+  {
+    "id": "missing_img_assets_uses_fallback",
+    "raw": {
+      "global": {
+        "name": "NoIconPlayer",
+        "level": 150,
+        "rank": {
+          "rankName": "Platinum",
+          "rankDiv": 3,
+          "rankScore": 8000,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/platinum3.png",
+          "ALStopIntGlobal": 100000
+        },
+        "arena": {
+          "rankName": "Unranked",
+          "rankDiv": 4,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Wraith": {
+            "data": [{"key": "kills", "value": 500}]
+          },
+          "Octane": {
+            "data": [{"key": "kills", "value": 100}],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/octane.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "NoIconPlayer",
+      "level": 150,
+      "totalKills": 600,
+      "topLegend": {
+        "name": "Wraith",
+        "kills": 500,
+        "icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"
+      },
+      "rank": {
+        "name": "Platinum",
+        "division": 3,
+        "score": 8000,
+        "image": "https://api.mozambiquehe.re/assets/ranks/platinum3.png",
+        "globalRankInt": 100000
+      },
+      "arenaRank": {
+        "name": "Unranked",
+        "division": 4,
+        "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  },
+  {
+    "id": "season_kills_fallback_sums_when_no_canonical_kills_key",
+    "raw": {
+      "global": {
+        "name": "SeasonPlayer",
+        "level": 300,
+        "rank": {
+          "rankName": "Diamond",
+          "rankDiv": 1,
+          "rankScore": 12000,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/diamond1.png",
+          "ALStopIntGlobal": 50000
+        },
+        "arena": {
+          "rankName": "Unranked",
+          "rankDiv": 4,
+          "rankImg": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+        }
+      },
+      "legends": {
+        "all": {
+          "Bangalore": {
+            "data": [
+              {"key": "kills_season_14", "value": 371},
+              {"key": "kills_season_15", "value": 43}
+            ],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"}
+          },
+          "Valkyrie": {
+            "data": [
+              {"key": "kills_season_12", "value": 653},
+              {"key": "kills_season_13", "value": 511}
+            ],
+            "ImgAssets": {"icon": "https://api.mozambiquehe.re/assets/icons/valkyrie.png"}
+          }
+        }
+      }
+    },
+    "stamp": "20260101T000000Z",
+    "expected": {
+      "playerName": "SeasonPlayer",
+      "level": 300,
+      "totalKills": 1578,
+      "topLegend": {
+        "name": "Valkyrie",
+        "kills": 1164,
+        "icon": "https://api.mozambiquehe.re/assets/icons/valkyrie.png"
+      },
+      "rank": {
+        "name": "Diamond",
+        "division": 1,
+        "score": 12000,
+        "image": "https://api.mozambiquehe.re/assets/ranks/diamond1.png",
+        "globalRankInt": 50000
+      },
+      "arenaRank": {
+        "name": "Unranked",
+        "division": 4,
+        "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
+      },
+      "collectedAtUtc": "20260101T000000Z"
+    }
+  }
+]

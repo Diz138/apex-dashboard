@@ -20,11 +20,12 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# VS Code settings folder
+# vs code settings folder
 .vscode/
 
-# Python virtual environment
+# python
 .venv/
+__pycache__/
 
-# Snapshot data
+# snapshot data
 retriever/data/snapshots/
