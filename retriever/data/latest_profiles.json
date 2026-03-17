@@ -1,8 +1,8 @@
 [
   {
     "playerName": "Dizzywill813",
-    "level": 248,
-    "totalKills": 1041,
+    "level": 249,
+    "totalKills": 1042,
     "topLegend": {
       "name": "Gibraltar",
       "kills": 184,
@@ -10,22 +10,22 @@
     },
     "rank": {
       "name": "Silver",
-      "division": 2,
-      "score": 4694,
-      "image": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
-      "globalRankInt": 2041677
+      "division": 1,
+      "score": 4794,
+      "image": "https://api.mozambiquehe.re/assets/ranks/silver1.png",
+      "globalRankInt": 2026595
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260316T053754Z"
+    "collectedAtUtc": "20260317T052929Z"
   },
   {
     "playerName": "the EPIC wig",
-    "level": 499,
-    "totalKills": 3153,
+    "level": 0,
+    "totalKills": 3180,
     "topLegend": {
       "name": "Valkyrie",
       "kills": 1479,
@@ -34,20 +34,20 @@
     "rank": {
       "name": "Gold",
       "division": 2,
-      "score": 7523,
+      "score": 7519,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
-      "globalRankInt": 1225999
+      "globalRankInt": 1235734
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260316T053754Z"
+    "collectedAtUtc": "20260317T052929Z"
   },
   {
     "playerName": "xtrippiex",
-    "level": 121,
+    "level": 122,
     "totalKills": 442,
     "topLegend": {
       "name": "Bangalore",
@@ -57,16 +57,16 @@
     "rank": {
       "name": "Gold",
       "division": 4,
-      "score": 6108,
+      "score": 6094,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
-      "globalRankInt": 1642573
+      "globalRankInt": 1656643
     },
     "arenaRank": {
       "name": "Bronze",
       "division": 1,
       "image": "https://api.mozambiquehe.re/assets/ranks/bronze1.png"
     },
-    "collectedAtUtc": "20260316T053754Z"
+    "collectedAtUtc": "20260317T052929Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -82,14 +82,14 @@
       "division": 4,
       "score": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/rookie4.png",
-      "globalRankInt": 2977907
+      "globalRankInt": 2989521
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260316T053754Z"
+    "collectedAtUtc": "20260317T052929Z"
   },
   {
     "playerName": "GOT2ONME6588",
@@ -105,13 +105,13 @@
       "division": 2,
       "score": 4112,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
-      "globalRankInt": 2188999
+      "globalRankInt": 2197954
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260316T053754Z"
+    "collectedAtUtc": "20260317T052929Z"
   }
 ]
