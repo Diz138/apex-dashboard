@@ -1,8 +1,8 @@
 [
   {
     "playerName": "Dizzywill813",
-    "level": 249,
-    "totalKills": 1042,
+    "level": 250,
+    "totalKills": 1047,
     "topLegend": {
       "name": "Gibraltar",
       "kills": 184,
@@ -11,20 +11,20 @@
     "rank": {
       "name": "Silver",
       "division": 1,
-      "score": 4794,
+      "score": 5065,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver1.png",
-      "globalRankInt": 2026595
+      "globalRankInt": 1975515
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260317T052929Z"
+    "collectedAtUtc": "20260318T053144Z"
   },
   {
     "playerName": "the EPIC wig",
-    "level": 0,
+    "level": 1,
     "totalKills": 3180,
     "topLegend": {
       "name": "Valkyrie",
@@ -34,16 +34,16 @@
     "rank": {
       "name": "Gold",
       "division": 2,
-      "score": 7519,
+      "score": 7649,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
-      "globalRankInt": 1235734
+      "globalRankInt": 1216285
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260317T052929Z"
+    "collectedAtUtc": "20260318T053144Z"
   },
   {
     "playerName": "xtrippiex",
@@ -59,14 +59,14 @@
       "division": 4,
       "score": 6094,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
-      "globalRankInt": 1656643
+      "globalRankInt": 1667983
     },
     "arenaRank": {
       "name": "Bronze",
       "division": 1,
       "image": "https://api.mozambiquehe.re/assets/ranks/bronze1.png"
     },
-    "collectedAtUtc": "20260317T052929Z"
+    "collectedAtUtc": "20260318T053144Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -82,36 +82,36 @@
       "division": 4,
       "score": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/rookie4.png",
-      "globalRankInt": 2989521
+      "globalRankInt": 3004775
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260317T052929Z"
+    "collectedAtUtc": "20260318T053144Z"
   },
   {
     "playerName": "GOT2ONME6588",
-    "level": 53,
-    "totalKills": 145,
+    "level": 54,
+    "totalKills": 152,
     "topLegend": {
       "name": "Bangalore",
-      "kills": 90,
+      "kills": 97,
       "icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"
     },
     "rank": {
       "name": "Silver",
       "division": 2,
-      "score": 4112,
+      "score": 4382,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
-      "globalRankInt": 2197954
+      "globalRankInt": 2139207
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260317T052929Z"
+    "collectedAtUtc": "20260318T053144Z"
   }
 ]
