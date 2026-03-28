@@ -11,20 +11,20 @@
     "rank": {
       "name": "Silver",
       "division": 3,
-      "score": 3745,
+      "score": 3649,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver3.png",
-      "globalRankInt": 2431386
+      "globalRankInt": 2477192
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260327T053405Z"
+    "collectedAtUtc": "20260328T052825Z"
   },
   {
     "playerName": "the EPIC wig",
-    "level": 9,
+    "level": 12,
     "totalKills": 3222,
     "topLegend": {
       "name": "Valkyrie",
@@ -33,17 +33,17 @@
     },
     "rank": {
       "name": "Gold",
-      "division": 3,
-      "score": 6504,
-      "image": "https://api.mozambiquehe.re/assets/ranks/gold3.png",
-      "globalRankInt": 1619119
+      "division": 2,
+      "score": 7027,
+      "image": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
+      "globalRankInt": 1466334
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260327T053405Z"
+    "collectedAtUtc": "20260328T052825Z"
   },
   {
     "playerName": "xtrippiex",
@@ -66,7 +66,7 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260327T053405Z"
+    "collectedAtUtc": "20260328T052825Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -89,29 +89,29 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260327T053405Z"
+    "collectedAtUtc": "20260328T052825Z"
   },
   {
     "playerName": "GOT2ONME6588",
-    "level": 55,
-    "totalKills": 158,
+    "level": 57,
+    "totalKills": 166,
     "topLegend": {
       "name": "Bangalore",
-      "kills": 103,
+      "kills": 111,
       "icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"
     },
     "rank": {
       "name": "Silver",
-      "division": 3,
-      "score": 3536,
-      "image": "https://api.mozambiquehe.re/assets/ranks/silver3.png",
-      "globalRankInt": 2507956
+      "division": 4,
+      "score": 3476,
+      "image": "https://api.mozambiquehe.re/assets/ranks/silver4.png",
+      "globalRankInt": 2537250
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260327T053405Z"
+    "collectedAtUtc": "20260328T052825Z"
   }
 ]
