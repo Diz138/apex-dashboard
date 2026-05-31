@@ -13,18 +13,18 @@
       "division": 3,
       "score": 3500,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver3.png",
-      "globalRankInt": 3181768
+      "globalRankInt": 3194948
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260530T060642Z"
+    "collectedAtUtc": "20260531T062923Z"
   },
   {
     "playerName": "the EPIC wig",
-    "level": 42,
+    "level": 44,
     "totalKills": 3583,
     "topLegend": {
       "name": "Valkyrie",
@@ -36,14 +36,14 @@
       "division": 4,
       "score": 6055,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
-      "globalRankInt": 2250790
+      "globalRankInt": 2261913
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260530T060642Z"
+    "collectedAtUtc": "20260531T062923Z"
   },
   {
     "playerName": "xtrippiex",
@@ -59,14 +59,14 @@
       "division": 1,
       "score": 4958,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver1.png",
-      "globalRankInt": 2666301
+      "globalRankInt": 2677937
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260530T060642Z"
+    "collectedAtUtc": "20260531T062923Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -89,15 +89,15 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260530T060642Z"
+    "collectedAtUtc": "20260531T062923Z"
   },
   {
     "playerName": "GOT2ONME6588",
-    "level": 76,
-    "totalKills": 317,
+    "level": 77,
+    "totalKills": 319,
     "topLegend": {
       "name": "Bangalore",
-      "kills": 137,
+      "kills": 139,
       "icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png"
     },
     "rank": {
@@ -105,13 +105,13 @@
       "division": 2,
       "score": 4271,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver2.png",
-      "globalRankInt": 2881974
+      "globalRankInt": 2894470
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260530T060642Z"
+    "collectedAtUtc": "20260531T062923Z"
   }
 ]
