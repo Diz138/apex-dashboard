@@ -9,18 +9,18 @@
       "icon": "https://api.mozambiquehe.re/assets/icons/gibraltar.png"
     },
     "rank": {
-      "name": "Unranked",
-      "division": 0,
-      "score": 0,
-      "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png",
-      "globalRankInt": "\u2014"
+      "name": "Silver",
+      "division": 4,
+      "score": 3250,
+      "image": "https://api.mozambiquehe.re/assets/ranks/silver4.png",
+      "globalRankInt": 3837827
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260724T055806Z"
+    "collectedAtUtc": "20260725T055253Z"
   },
   {
     "playerName": "the EPIC wig",
@@ -32,18 +32,18 @@
       "icon": "https://api.mozambiquehe.re/assets/icons/valkyrie.png"
     },
     "rank": {
-      "name": "Unranked",
-      "division": 0,
-      "score": 0,
-      "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png",
-      "globalRankInt": "\u2014"
+      "name": "Gold",
+      "division": 4,
+      "score": 5750,
+      "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
+      "globalRankInt": 2890221
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260724T055806Z"
+    "collectedAtUtc": "20260725T055253Z"
   },
   {
     "playerName": "xtrippiex",
@@ -66,7 +66,7 @@
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260724T055806Z"
+    "collectedAtUtc": "20260725T055253Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -89,7 +89,7 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260724T055806Z"
+    "collectedAtUtc": "20260725T055253Z"
   },
   {
     "playerName": "GOT2ONME6588",
@@ -112,6 +112,6 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260724T055806Z"
+    "collectedAtUtc": "20260725T055253Z"
   }
 ]
