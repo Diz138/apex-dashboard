@@ -13,14 +13,14 @@
       "division": 4,
       "score": 3250,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver4.png",
-      "globalRankInt": 3837827
+      "globalRankInt": 3847820
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260725T055253Z"
+    "collectedAtUtc": "20260726T060142Z"
   },
   {
     "playerName": "the EPIC wig",
@@ -36,14 +36,14 @@
       "division": 4,
       "score": 5750,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
-      "globalRankInt": 2890221
+      "globalRankInt": 2899502
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260725T055253Z"
+    "collectedAtUtc": "20260726T060142Z"
   },
   {
     "playerName": "xtrippiex",
@@ -66,7 +66,7 @@
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260725T055253Z"
+    "collectedAtUtc": "20260726T060142Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -89,7 +89,7 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260725T055253Z"
+    "collectedAtUtc": "20260726T060142Z"
   },
   {
     "playerName": "GOT2ONME6588",
@@ -112,6 +112,6 @@
       "division": 0,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20260725T055253Z"
+    "collectedAtUtc": "20260726T060142Z"
   }
 ]
