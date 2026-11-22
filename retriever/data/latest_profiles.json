@@ -13,14 +13,14 @@
       "division": 1,
       "score": 2634,
       "image": "https://api.mozambiquehe.re/assets/ranks/bronze1.png",
-      "globalRankInt": 5006357
+      "globalRankInt": 5016555
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20261121T050457Z"
+    "collectedAtUtc": "20261122T050503Z"
   },
   {
     "playerName": "the EPIC wig",
@@ -36,14 +36,14 @@
       "division": 4,
       "score": 5829,
       "image": "https://api.mozambiquehe.re/assets/ranks/gold4.png",
-      "globalRankInt": 3379093
+      "globalRankInt": 3385987
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20261121T050457Z"
+    "collectedAtUtc": "20261122T050503Z"
   },
   {
     "playerName": "xtrippiex",
@@ -59,14 +59,14 @@
       "division": 3,
       "score": 3839,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver3.png",
-      "globalRankInt": 4345631
+      "globalRankInt": 4354711
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20261121T050457Z"
+    "collectedAtUtc": "20261122T050503Z"
   },
   {
     "playerName": "KarlHavoc3067",
@@ -89,7 +89,7 @@
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20261121T050457Z"
+    "collectedAtUtc": "20261122T050503Z"
   },
   {
     "playerName": "GOT2ONME6588",
@@ -105,13 +105,13 @@
       "division": 1,
       "score": 4898,
       "image": "https://api.mozambiquehe.re/assets/ranks/silver1.png",
-      "globalRankInt": 3833755
+      "globalRankInt": 3840938
     },
     "arenaRank": {
       "name": "Unranked",
       "division": 4,
       "image": "https://api.mozambiquehe.re/assets/ranks/unranked4.png"
     },
-    "collectedAtUtc": "20261121T050457Z"
+    "collectedAtUtc": "20261122T050503Z"
   }
 ]
